@@ -1,0 +1,32 @@
+//REDRED_CORTIS
+const key = "A:minor"
+    $synth: n("<0 [-1 -2]>" .add("[0@7 <[0,7]>]"))
+        .scale(key)
+        .struct("[x@2 x x@2 x x@2] x*4")
+        .s("supersaw")
+        .distort(0.3)
+        .legato("[0.5@3 0.9] !2")
+        .lpf("[10000@3 1200] !2")
+        .delay(0.05)
+        .pan("0.2, 0.8")
+        .decay("0.3, 0.4")
+        .gain(slider(0.5,0,1))
+
+    $kick: s("bd*4")
+        .bank("compurhythm1000")
+     .room(".5")
+
+    $snare: s("[~ sd] *2")
+        .bank("compurhythm1000")
+        .room(".10")
+
+    $bass: n("<0 [-1 -2]>" .add("<0 7> *8"))
+        .scale(key)
+        .transpose(-24)
+        .struct("x*8")
+        .s("supersaw")
+        .decay("0.5, 0.5")
+        .delay("0.1, 0.2")
+        .pan("0.1, 0.9")
+        .lpf(4000)
+        .gain(slider(0.786,0,1))
