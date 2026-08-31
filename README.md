@@ -1,5 +1,10 @@
 # Strudel Music Patterns
 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Strudel](https://img.shields.io/badge/Strudel-Live%20Coding-blue?style=for-the-badge&logo=music&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![Audio](https://img.shields.io/badge/Audio-Web%20Audio%20API-green?style=for-the-badge&logo=html5&logoColor=white)
+
 A curated collection of live coding music patterns built with Strudel, featuring algorithmic compositions and interactive sound design experiments.
 
 **Topics:** `live-coding` `strudel` `algorithmic-music`
